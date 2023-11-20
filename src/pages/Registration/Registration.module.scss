@@ -1,0 +1,51 @@
+.container {
+  width: 428px;
+  height: 926px;
+  background-color: #FFF8F2;;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    margin-top: 132px;
+  }
+
+  input {
+    width: 261px;
+    height: 47px;
+    border-radius: 30px;
+    border: 1px solid #000;
+    background: #FFF;
+    padding-left: 33px;
+    margin-bottom: 17px;
+  }
+
+  input::placeholder {
+    color: #797474;
+  }
+
+  button {
+    cursor: pointer;
+    width: 247px;
+    height: 63px;
+    border-radius: 30px;
+    border: none;
+    background: #704CB8;
+    margin-top: 76px;
+    margin-bottom: 151px;
+
+    p {
+      color: #FFF;
+      font-size: 27px;
+
+    }
+  }
+
+  h5 {
+    color: #716D6D;
+    font-size: 15px;
+    font-family: Pavanam;
+
+  }
+}

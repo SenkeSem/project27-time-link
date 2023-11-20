@@ -1,9 +1,7 @@
+import Registration from './pages/Registration/Registration.jsx';
+
 function App() {
-  return (
-    <div>
-      <h2>Hello world!!!</h2>
-    </div>
-  );
+  return <Registration />;
 }
 
 export default App;

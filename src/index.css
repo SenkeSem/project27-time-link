@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Paytone One';
+  box-sizing: border-box;
+}
+
 h2 {
   background-color: #424242;
   color: gold;
