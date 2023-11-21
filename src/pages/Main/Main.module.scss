@@ -1,0 +1,46 @@
+.container {
+  width: 428px;
+  height: 926px;
+  background-color: #FFF8F2;;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .logo_box {
+    width: 313px;
+    height: 419px;
+    margin-top: 98px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
+    .logo_item {
+      cursor: pointer;
+    }
+
+    p {
+      text-align: center;
+      color: #704CB8;
+      font-size: 20px;
+    }
+  }
+
+  button {
+    cursor: pointer;
+    margin-top: 96px;
+    width: 311px;
+    height: 65px;
+    border-radius: 30px;
+    border: 5px solid #704CB8;
+    background: #FFF;
+    color: #704CB8;
+    font-size: 30px;
+  }
+
+  .main_logo {
+    margin-top: 60px;
+  }
+}
