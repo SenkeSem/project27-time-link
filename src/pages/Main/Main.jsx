@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import styles from './Main.module.scss';
 
 function Main() {
@@ -7,7 +9,9 @@ function Main() {
     <div className={styles.container}>
       <div className={styles.logo_box}>
         <div className={styles.logo_item}>
-          <img src="img/profile-logo.png" alt="profile" />
+          <Link to="/profile">
+            <img src="img/profile-logo.png" alt="profile" />
+          </Link>
           <p>Profile</p>
         </div>
         <div className={styles.logo_item}>

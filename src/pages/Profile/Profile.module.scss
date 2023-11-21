@@ -1,0 +1,117 @@
+.container {
+  width: 428px;
+  height: 926px;
+  background-color: #FFF8F2;;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .logo_box {
+    width: 381px;
+    height: 85px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 35px;
+  }
+
+  .user_box {
+    width: 380px;
+    height: 162px;
+    margin-top: 31px;
+    display: flex;
+    justify-content: space-between;
+
+    .user_picture {
+      width: 139px;
+      height: 162px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: rgba(121, 116, 116, 0.60);
+    }
+
+    .user_info {
+      position: relative;
+      width: 179px;
+      height: 162px;
+      border-radius: 30px;
+      border: 5px solid #EF9949;
+      background: #FFF;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      input {
+        width: 120px;
+        border: none;
+        border-bottom: 2px solid #C2B1B1;
+      }
+
+      img {
+        cursor: pointer;
+        position: absolute;
+        top: 19px;
+        right: 22px;
+      }
+    }
+  }
+
+  .hobbies_box {
+    width: 365px;
+    height: 155px;
+    margin-top: 66px;
+
+    h3 {
+      color: #797474;
+      font-size: 30px;
+    }
+
+    input {
+      padding-left: 30px;
+      font-size: 40px;
+      width: 365px;
+      height: 111px;
+      border-radius: 30px;
+      border: 5px solid #EF9949;
+      background: #FFF;
+    }
+  }
+
+  .interests_box {
+    width: 365px;
+    height: 155px;
+    margin-top: 55px;
+
+    h3 {
+      color: #797474;
+      font-size: 30px;
+    }
+
+    input {
+      padding-left: 30px;
+      font-size: 40px;
+      width: 365px;
+      height: 111px;
+      border-radius: 30px;
+      border: 5px solid #EF9949;
+      background: #FFF;
+    }
+  }
+
+  .save_btn {
+    cursor: pointer;
+    margin-top: 60px;
+    width: 164px;
+    height: 52px;
+    border-radius: 30px;
+    background: #EF9949;
+    border: none;
+    color: #FFF;
+    font-size: 27px;
+  }
+}
