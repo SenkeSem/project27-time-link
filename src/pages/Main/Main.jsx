@@ -16,16 +16,18 @@ function Main() {
         </div>
         <div className={styles.logo_item}>
           <Link to="/chat">
-            <img src="img/chat-logo.png" alt="profile" />
+            <img src="img/chat-logo.png" alt="chat" />
           </Link>
           <p>Chat</p>
         </div>
         <div className={styles.logo_item}>
-          <img src="img/schedule-logo.png" alt="profile" />
+          <img src="img/schedule-logo.png" alt="schedule" />
           <p>Schedule</p>
         </div>
         <div className={styles.logo_item}>
-          <img src="img/activites-logo.png" alt="profile" />
+          <Link to="/activites">
+            <img src="img/activites-logo.png" alt="activites" />
+          </Link>
           <p>Activities</p>
         </div>
       </div>
