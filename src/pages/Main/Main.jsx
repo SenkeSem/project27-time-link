@@ -15,7 +15,9 @@ function Main() {
           <p>Profile</p>
         </div>
         <div className={styles.logo_item}>
-          <img src="img/chat-logo.png" alt="profile" />
+          <Link to="/chat">
+            <img src="img/chat-logo.png" alt="profile" />
+          </Link>
           <p>Chat</p>
         </div>
         <div className={styles.logo_item}>
