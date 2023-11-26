@@ -35,7 +35,9 @@ function Activities() {
           <img src="img/right.svg" alt="right" />
         </div>
       </div>
-      <button>Tap to generate an activity</button>
+      <Link to="/football">
+        <button>Tap to generate an activity</button>
+      </Link>
     </div>
   );
 }
