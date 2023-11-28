@@ -28,10 +28,9 @@ function ActivitiesPage() {
     <div className={styles.container}>
       <img src={ActivitiesList[ActivityNumber].imageUrl} alt="background" />
       <article>
-        {/* <input type="color" /> */}
         <h4>Suggested activity:</h4>
         <h3>{ActivitiesList[ActivityNumber].activiteName}</h3>
-        <h4>Friday, 15:00-17:00</h4>
+        <h4>15:00-17:00</h4>
       </article>
       <button onClick={onClickRegenerate}>Regenerate</button>
       <nav>
