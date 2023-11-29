@@ -5,6 +5,12 @@ import styles from './Activities.module.scss';
 import { Link } from 'react-router-dom';
 
 function Activities() {
+  const [activeDoor, setActiveDoor] = React.useState(0);
+  const [activeLeisure, setActiveLeisure] = React.useState(0);
+
+  const DOOR_TYPE = ['Outdoor', 'Indoor'];
+  const LEISURE_TYPE = ['Passive leisure', 'Active leisure'];
+
   return (
     <div className={styles.container}>
       <div className={styles.logo_box}>
@@ -16,12 +22,24 @@ function Activities() {
       <h2>Filter</h2>
       <div className={styles.filter_box}>
         <ul>
-          <li>Outdoor</li>
-          <li className={styles.active}>Indoor</li>
+          {DOOR_TYPE.map((item, index) => (
+            <li
+              key={index}
+              onClick={() => setActiveLeisure(index)}
+              className={activeLeisure === index ? styles.active : ''}>
+              {item}
+            </li>
+          ))}
         </ul>
         <ul>
-          <li className={styles.active}>Passive leisure</li>
-          <li>Active leisure</li>
+          {LEISURE_TYPE.map((item, index) => (
+            <li
+              key={index}
+              onClick={() => setActiveDoor(index)}
+              className={activeDoor === index ? styles.active : ''}>
+              {item}
+            </li>
+          ))}
         </ul>
         <ul>
           <li>Number of participants</li>
