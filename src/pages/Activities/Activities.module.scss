@@ -28,43 +28,99 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 26px;
-    width: 268px;
-    height: auto;
 
-    article {
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
+    ul {
+      background-color: #FFF;
       width: 268px;
       height: 54px;
-      border: 1px solid #704CB8;
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
       border-radius: 30px;
+
+      .active {
+        background-color: #704CB8;
+        color: #FFF;
+      }
+
+      li {
+        cursor: pointer;
+        border: 1px solid #704CB8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        font-size: 18px;
+        color: #000;
+        font-weight: 400;
+
+        &:first-child {
+          border-right: none;
+          border-radius: 30px 0 0 30px;
+        }
+
+        &:last-child {
+          border-radius: 0 30px 30px 0;
+        }
+      }
+
+      input {
+        border: none;
+        background-color: #704CB8;
+        color: #FFF;
+        text-align: center;
+        width: 20%;
+        height: 100%;
+        border-radius: 0 30px 30px 0;
+        font-size: 18px;
+        font-weight: 400;
+
+        &::placeholder {
+          color: #FFF;
+        }
+      }
+
+      .timeInput {
+        border: 1px solid #704CB8;
+        background-color: #FFF;
+        color: #000;
+        border-radius: 30px;
+        width: 100%;
+        height: 100%;
+
+        &::placeholder {
+          color: black;
+        }
+      }
+    }
+
+    .more_box {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      bottom: -45px;
+      left: 0;
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+      width: 59px;
+      height: 23px;
+      border-bottom: 1px solid #797474;
+  
+      p {
+        color: #797474;
+      }
     }
   }
 
-  .more_box {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    bottom: -45px;
-    left: 0;
-    position: absolute;
-    width: 59px;
-    height: 23px;
-    border-bottom: 1px solid #797474;
-
-    p {
-      color: #797474;
-    }
-  }
 
   button {
     padding: 22px 49px 38px 49px;
     cursor: pointer;
-    margin-top: 165px;
     width: 354px;
     height: 129px;
     border-radius: 30px;
@@ -75,9 +131,13 @@
     font-size: 30px;
 
     &:active {
-      margin-top: 168px;
+      margin-top: 4px;
       margin-left: 2px;
       box-shadow: 1px 3px 1px 0px rgba(0, 0, 0, 1);
     }
+  }
+
+  a {
+    margin-top: 165px;
   }
 }
