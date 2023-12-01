@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 function Activities() {
   const [activeDoor, setActiveDoor] = React.useState(0);
   const [activeLeisure, setActiveLeisure] = React.useState(0);
+  const [timeValue, setTimeValue] = React.useState('');
 
   const DOOR_TYPE = ['Outdoor', 'Indoor'];
   const LEISURE_TYPE = ['Passive leisure', 'Active leisure'];
@@ -46,7 +47,13 @@ function Activities() {
           <input type="text" placeholder="3" />
         </ul>
         <ul>
-          <input className={styles.timeInput} type="text" placeholder="Time" />
+          <input
+            value={timeValue}
+            onChange={(event) => setTimeValue(event.target.value)}
+            className={styles.timeInput}
+            type="text"
+            placeholder="Time"
+          />
         </ul>
         <div className={styles.more_box}>
           <p>More</p>
