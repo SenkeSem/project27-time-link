@@ -102,8 +102,10 @@ function Registration() {
           </button>
         </Link>
       </form>
-      <h5> © Copyright.</h5>
-      <h5>All Rights Reserved</h5>
+      <div className={styles.companyInfo}>
+        <h5> © Copyright.</h5>
+        <h5>All Rights Reserved</h5>
+      </div>
     </div>
   );
 }
