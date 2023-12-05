@@ -1,33 +1,26 @@
 .container {
-  width: 428px;
-  height: 926px;
-  background-color: #FFF8F2;
+  width: 100vw;
+  height: 100vh;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 
   .logo_box {
-    width: 381px;
-    height: 85px;
-
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    margin-top: 35px;
+    margin-top: 5%;
   }
 
   .user_box {
-    width: 380px;
-    height: 162px;
-    margin-top: 31px;
+    width: 90%;
     display: flex;
     justify-content: space-between;
 
     .user_picture {
-      width: 139px;
-      height: 162px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -36,18 +29,17 @@
 
     .user_info {
       position: relative;
-      width: 179px;
-      height: 162px;
+      width: 50%;
       border-radius: 30px;
       border: 5px solid #EF9949;
       background: #FFF;
-      padding: 28px;
+      padding: 6%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
 
       input {
-        width: 120px;
+        width: 100%;
         border: none;
         border-bottom: 2px solid #C2B1B1;
       }
@@ -62,20 +54,22 @@
   }
 
   .hobbies_box {
-    width: 365px;
-    height: 155px;
-    margin-top: 66px;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
 
     h3 {
       color: #797474;
-      font-size: 30px;
+      font-size: 22px;
     }
 
     input {
+      align-self: center;
       padding-left: 30px;
       font-size: 40px;
-      width: 365px;
-      height: 111px;
+      width: 90%;
+      height: 70%;
       border-radius: 30px;
       border: 5px solid #EF9949;
       background: #FFF;
@@ -83,20 +77,22 @@
   }
 
   .interests_box {
-    width: 365px;
-    height: 155px;
-    margin-top: 55px;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
 
     h3 {
       color: #797474;
-      font-size: 30px;
+      font-size: 22px;
     }
 
     input {
+      align-self: center;
       padding-left: 30px;
       font-size: 40px;
-      width: 365px;
-      height: 111px;
+      width: 90%;
+      height: 70%;
       border-radius: 30px;
       border: 5px solid #EF9949;
       background: #FFF;
@@ -105,7 +101,6 @@
 
   .save_btn {
     cursor: pointer;
-    margin-top: 60px;
     width: 164px;
     height: 52px;
     border-radius: 30px;
@@ -113,5 +108,6 @@
     border: none;
     color: #FFF;
     font-size: 27px;
+    margin-bottom: 7%;
   }
 }

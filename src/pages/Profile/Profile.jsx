@@ -11,7 +11,7 @@ function Profile() {
         <Link to="/main">
           <img width={47} height={46} src="img/back-button.png" alt="back-button" />
         </Link>
-        <img src="img/profile-timelink.png" alt="profile-timelink" />
+        <img width={100} src="img/profile-timelink.png" alt="profile-timelink" />
       </div>
       <div className={styles.user_box}>
         <div className={styles.user_picture}>
