@@ -1,34 +1,35 @@
 .container {
-  width: 428px;
-  height: 926px;
-  background-color: #FFF8F2;;
+  width: 100vw;
+  height: 100vh;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 
   .logo_box {
-    width: 381px;
-    height: 85px;
-
+    width: 90%;
+    height: 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    margin-top: 35px;
   }
 
   h2 {
     color: #704CB8;
-    font-size: 50px;
-    margin-bottom: 40px;
+    font-size: 40px;
+    margin-bottom: 5%;
   }
 
   .filter_box {
     position: relative;
+    width: 70%;
+    height: 40%;
     display: flex;
     flex-direction: column;
-    gap: 26px;
+    align-items: center;
+    gap: 6%;
+    margin-bottom: 25%;
 
     ul {
       background-color: #FFF;
@@ -98,17 +99,11 @@
     }
 
     .more_box {
-      cursor: pointer;
+      position: absolute;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      bottom: -45px;
-      left: 0;
-      position: absolute;
-      bottom: -50px;
-      left: 0;
-      width: 59px;
-      height: 23px;
+      bottom: -15%;
       border-bottom: 1px solid #797474;
   
       p {
@@ -119,10 +114,8 @@
 
 
   button {
-    padding: 22px 49px 38px 49px;
+    padding: 5% 10% 5% 10%;
     cursor: pointer;
-    width: 354px;
-    height: 129px;
     border-radius: 30px;
     background: #704CB8;
     box-shadow: 5px 10px 4px 0px rgba(0, 0, 0, 0.25);
@@ -135,9 +128,14 @@
       margin-left: 2px;
       box-shadow: 1px 3px 1px 0px rgba(0, 0, 0, 1);
     }
+
   }
 
-  a {
-    margin-top: 165px;
+  .tapToGenerate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 25%;
   }
 }

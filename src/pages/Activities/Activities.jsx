@@ -27,7 +27,7 @@ function Activities() {
         <Link to="/main">
           <img width={47} height={46} src="img/back-button.svg" alt="back-button" />
         </Link>
-        <img src="img/profile-timelink.png" alt="profile-timelink" />
+        <img width={100} src="img/profile-timelink.png" alt="profile-timelink" />
       </div>
       <h2>Filter</h2>
       <div className={styles.filter_box}>
@@ -69,9 +69,11 @@ function Activities() {
           <img src="img/right.svg" alt="right" />
         </div>
       </div>
-      <Link to="/football">
-        <button>Tap to generate an activity</button>
-      </Link>
+      <div className={styles.tapToGenerate}>
+        <Link to="/football">
+          <button className={styles.tapButton}>Tap to generate an activity</button>
+        </Link>
+      </div>
     </div>
   );
 }
