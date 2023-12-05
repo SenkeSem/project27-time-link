@@ -20,12 +20,20 @@ const ActivitiesList = [
 function ActivitiesPage() {
   const activitiesTime = useSelector((state) => state.activities.activitiesTime);
 
-  const [ActivityNumber, setActivityNumber] = React.useState(0);
+  let startNumber = Math.floor(Math.random() * ActivitiesList.length);
+
+  const [ActivityNumber, setActivityNumber] = React.useState(startNumber);
 
   const onClickRegenerate = () => {
-    let number = Math.floor(Math.random() * ActivitiesList.length);
-
-    setActivityNumber(number);
+    while (true) {
+      let nextNumber = Math.floor(Math.random() * ActivitiesList.length);
+      if (nextNumber !== startNumber) {
+        setActivityNumber(nextNumber);
+        break;
+      } else {
+        continue;
+      }
+    }
   };
 
   return (
