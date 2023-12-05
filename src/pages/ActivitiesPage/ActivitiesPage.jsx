@@ -4,6 +4,8 @@ import styles from './ActivitiesPage.module.scss';
 
 import { Link } from 'react-router-dom';
 
+import { useSelector } from 'react-redux';
+
 const ActivitiesList = [
   { activiteName: 'Football Match', imageUrl: '/img/football.png' },
   { activiteName: 'Shopping', imageUrl: '/img/shopping.png' },
@@ -16,6 +18,8 @@ const ActivitiesList = [
 ];
 
 function ActivitiesPage() {
+  const activitiesTime = useSelector((state) => state.activities.activitiesTime);
+
   const [ActivityNumber, setActivityNumber] = React.useState(0);
 
   const onClickRegenerate = () => {
@@ -30,7 +34,7 @@ function ActivitiesPage() {
       <article>
         <h4>Suggested activity:</h4>
         <h3>{ActivitiesList[ActivityNumber].activiteName}</h3>
-        <h4>15:00-17:00</h4>
+        <h4>{activitiesTime}</h4>
       </article>
       <button onClick={onClickRegenerate}>Regenerate</button>
       <nav>

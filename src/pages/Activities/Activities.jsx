@@ -3,14 +3,23 @@ import React from 'react';
 import styles from './Activities.module.scss';
 
 import { Link } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+
+import { setTime } from '../../redux/slices/activitiesSlice.js';
 
 function Activities() {
+  const dispatch = useDispatch();
+  const activitiesTime = useSelector((state) => state.activities.activitiesTime);
+
   const [activeDoor, setActiveDoor] = React.useState(0);
   const [activeLeisure, setActiveLeisure] = React.useState(0);
-  const [timeValue, setTimeValue] = React.useState('');
 
   const DOOR_TYPE = ['Outdoor', 'Indoor'];
   const LEISURE_TYPE = ['Passive leisure', 'Active leisure'];
+
+  const onChangeTime = (value) => {
+    dispatch(setTime(value));
+  };
 
   return (
     <div className={styles.container}>
@@ -48,8 +57,8 @@ function Activities() {
         </ul>
         <ul>
           <input
-            value={timeValue}
-            onChange={(event) => setTimeValue(event.target.value)}
+            value={activitiesTime}
+            onChange={(event) => onChangeTime(event.target.value)}
             className={styles.timeInput}
             type="text"
             placeholder="Time"
