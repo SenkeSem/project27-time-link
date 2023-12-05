@@ -21,7 +21,9 @@ function Main() {
           <p>Chat</p>
         </div>
         <div className={styles.logo_item}>
-          <img src="img/schedule-logo.png" alt="schedule" />
+          <Link to="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <img src="img/schedule-logo.png" alt="schedule" />
+          </Link>
           <p>Schedule</p>
         </div>
         <div className={styles.logo_item}>

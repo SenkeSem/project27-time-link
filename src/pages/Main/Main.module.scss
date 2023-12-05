@@ -1,25 +1,30 @@
 .container {
-  width: 428px;
-  height: 926px;
-  background-color: #FFF8F2;;
+  width: 100vw;
+  height: 100vh;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 
   .logo_box {
-    width: 313px;
-    height: 419px;
-    margin-top: 98px;
+    width: 85%;
+    height: 50%;
+    margin-top: 10%;
 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
+    gap: 10%;
 
     .logo_item {
-      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 40%;
     }
+
 
     p {
       text-align: center;
@@ -29,10 +34,8 @@
   }
 
   button {
-    cursor: pointer;
-    margin-top: 96px;
-    width: 311px;
-    height: 65px;
+    width: 85%;
+    height: 10%;
     border-radius: 30px;
     border: 5px solid #704CB8;
     background: #FFF;
@@ -41,6 +44,7 @@
   }
 
   .main_logo {
-    margin-top: 60px;
+    width: 40%;
+    margin-bottom: 7%;
   }
 }
