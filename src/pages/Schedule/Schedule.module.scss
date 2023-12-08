@@ -1,0 +1,134 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  header {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    article {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 10%;
+
+      a {
+        margin-right: 7%;
+      }
+    }
+
+    ul {
+      list-style-type: none;
+      width: 90%;
+      height: 25%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 5%;
+      
+      
+      li {
+        border-right: 1px solid #FFF8F2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25%;
+        height: 100%;
+        background-color: #704CB8;
+        font-weight: 400;
+        color: #FFF;
+        font-size: 15px;
+        
+        &:first-child {
+          border-radius: 30px 0 0 30px;
+        }
+
+        &:last-child {
+          border-radius: 0 30px 30px 0;
+        }
+      }
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+
+    position:absolute;
+    top: 25%;
+
+    overflow: scroll;
+    scroll-behavior: smooth;
+
+    width: 100%;
+    height: 40%;
+    background-color: #FFF;
+
+    tr {
+
+      .colorBFD440 {
+        color: #FFF;
+        border-radius: 10px;
+        background-color: #BFD440;
+      }
+
+      .color54B152 {
+        color: #FFF;
+        border-radius: 10px;
+        background-color: #54B152;
+      }
+
+      td {
+        width: 10%;
+        height: 70px;
+        border-right: 1px solid #D9D9D9;
+        border-bottom: 1px solid #D9D9D9;
+        text-align: center;
+        
+        font-family: Pavanam;
+        font-size: 11px;
+        font-weight: 400;
+
+        &:first-child {
+          text-align: left;
+        }
+
+      }
+    }
+
+  }
+
+  footer {
+    // visibility: hidden;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 15%;
+    background-color: #FFF8F2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      width: 80%;
+      height: 50%;
+      border-radius: 30px;
+      background-color: #EF9949;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      font-size: 20px;
+      font-weight: 400;
+      color: #FFF;
+    }
+  }
+}
