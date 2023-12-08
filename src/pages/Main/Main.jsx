@@ -22,7 +22,7 @@ function Main() {
         </div>
         <div className={styles.logo_item}>
           <Link to="/schedule">
-            <img src="img/schedule-logo.png" alt="schedule" />
+            <img src="img/schedule.png" alt="schedule" />
           </Link>
           <p>Schedule</p>
         </div>
