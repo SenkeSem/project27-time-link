@@ -1,0 +1,58 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  nav {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+    img[alt="back-button"] {
+      position: absolute;
+      top: -15%;
+      left: 5%;
+    }
+  }
+
+  article {
+    width: 90%;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E0E0E0;
+
+    img {
+      width: 69px;
+      height:69px;
+      margin-left: 5%;
+    }
+
+    h4 {
+      font-size: 110%;
+      font-weight: 400;
+      margin-left: 5%;
+    }
+  }
+
+  button {
+    position: fixed;
+    bottom: 8%;
+
+    width: 60%;
+    height: 8%;
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 400;
+    border-radius: 30px;
+    background: #EF9949;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+}

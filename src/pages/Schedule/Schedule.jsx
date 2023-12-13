@@ -186,7 +186,9 @@ function Schedule() {
       </table>
 
       <footer>
-        <button>Match my calendar with</button>
+        <Link to="/friendLink">
+          <button>Match my calendar with</button>
+        </Link>
       </footer>
     </div>
   );

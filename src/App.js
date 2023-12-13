@@ -5,6 +5,7 @@ import Chat from './pages/Chat/Chat.jsx';
 import Activities from './pages/Activities/Activities.jsx';
 import ActivitiesPage from './pages/ActivitiesPage/ActivitiesPage.jsx';
 import Schedule from './pages/Schedule/Schedule.jsx';
+import FriendLink from './pages/FriendLink/FriendLink.jsx';
 
 import { Route, Routes } from 'react-router';
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/activites" element={<Activities />} />
         <Route path="/football" element={<ActivitiesPage />} />
         <Route path="/schedule" element={<Schedule />} />
+        <Route path="/friendLink" element={<FriendLink />} />
       </Routes>
     </>
   );
