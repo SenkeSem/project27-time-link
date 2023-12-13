@@ -23,6 +23,7 @@
   }
 
   article {
+    position: relative;
     width: 90%;
     height: 95px;
     display: flex;
@@ -30,9 +31,22 @@
     border-bottom: 1px solid #E0E0E0;
 
     img {
+      &.active {
+        border-radius: 50%;
+        border: 3px solid #EF9949;
+      }
+
       width: 69px;
       height:69px;
       margin-left: 5%;
+    }
+
+    img[alt="orange"] {
+      position: absolute;
+      bottom: 3%;
+      left: 10%;
+      width: 37px;
+      height: 37px;
     }
 
     h4 {

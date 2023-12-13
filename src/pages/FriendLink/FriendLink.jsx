@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import styles from './FriendLink.module.scss';
 
 function FriendLink() {
+  const [activeFriend, setActiveFriend] = React.useState(false);
+
   return (
     <div className={styles.container}>
       <nav>
@@ -14,7 +16,13 @@ function FriendLink() {
         <img width={200} height={30} src="img/FriendLinks.png" alt="FriendLinks" />
       </nav>
       <article>
-        <img src="img/m.svg" alt="m" />
+        <img
+          onClick={() => setActiveFriend(!activeFriend)}
+          className={activeFriend ? styles.active : ''}
+          src="img/m.svg"
+          alt="m"
+        />
+        {activeFriend && <img width={37} height={37} src="img/orange.svg" alt="orange" />}
         <h4>Maria Danilova</h4>
       </article>
       <article>
