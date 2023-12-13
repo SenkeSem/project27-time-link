@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 function Registration() {
   const [login, setLogin] = React.useState('');
   const [password, setPassword] = React.useState('');
+  const [passwordVisible, setPasswordVisible] = React.useState(false);
 
   const [loginDirty, setLoginDirty] = React.useState(false);
   const [passwordDirty, setPasswordDirty] = React.useState(false);
@@ -93,9 +94,18 @@ function Registration() {
           onBlur={(event) => blurHandler(event)}
           value={password}
           name="password"
-          type="text"
+          type={passwordVisible ? 'text' : 'password'}
           placeholder="Password"
         />
+
+        {
+          <img
+            onClick={() => setPasswordVisible(!passwordVisible)}
+            src={passwordVisible ? 'img/visibility_icon.svg' : 'img/off_visibility_icon.svg'}
+            alt="visibility_icon"
+          />
+        }
+
         <Link to={formValid && '/main'}>
           <button className={formValid ? '' : styles.notValid} type="submit">
             <p>Log In</p>
