@@ -5,7 +5,9 @@ import { Link } from 'react-router-dom';
 import styles from './FriendLink.module.scss';
 
 function FriendLink() {
-  const [activeFriend, setActiveFriend] = React.useState(false);
+  const [activeFriend, setActiveFriend] = React.useState();
+
+  const friendList = ['Maria Danilova', 'Dmitrii Markov', 'Mark Befus', 'Hanna Pekhouskaya'];
 
   return (
     <div className={styles.container}>
@@ -15,28 +17,18 @@ function FriendLink() {
         </Link>
         <img width={200} height={30} src="img/FriendLinks.png" alt="FriendLinks" />
       </nav>
-      <article>
-        <img
-          onClick={() => setActiveFriend(!activeFriend)}
-          className={activeFriend ? styles.active : ''}
-          src="img/m.svg"
-          alt="m"
-        />
-        {activeFriend && <img width={37} height={37} src="img/orange.svg" alt="orange" />}
-        <h4>Maria Danilova</h4>
-      </article>
-      <article>
-        <img src="img/d.svg" alt="d" />
-        <h4>Dmitrii Markov</h4>
-      </article>
-      <article>
-        <img src="img/m.svg" alt="m" />
-        <h4>Mark Befus</h4>
-      </article>
-      <article>
-        <img src="img/h.svg" alt="h" />
-        <h4>Hanna Pekhouskaya</h4>
-      </article>
+
+      {friendList.map((name, index) => (
+        <article key={index} onClick={() => setActiveFriend(index)}>
+          <img className={activeFriend === index && styles.active} src="img/m.svg" alt="d" />
+
+          {activeFriend === index && (
+            <img width={37} height={37} src="img/orange.svg" alt="orange" />
+          )}
+
+          <h4>{name}</h4>
+        </article>
+      ))}
       <button>Match</button>
     </div>
   );
